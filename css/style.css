@@ -1,0 +1,150 @@
+:root{
+     --border:1px solid #ff0000;
+     --fontbold:700;
+     --Lightgrayishblue1: hsl(211, 68%, 94%);
+     --Lightgrayishblue2:hsl(205, 33%, 90%);
+     --Darkgrayishblue: hsl(219, 12%, 42%);
+     --Verylightgrayishblue: hsl(210, 60%, 98%);
+     --bgwhite: hsl(0, 0%, 100%);
+     --Grayishblue: hsl(219, 14%, 63%);
+     --blackborder:1px solid #dadada;
+     --bgred:hsl(1, 90%, 64%);
+
+}
+
+body{
+     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+span{
+     word-spacing: 2px;
+}
+p,h3{
+     margin: 0;
+}
+.notification-container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.notification-box{
+     width: 650px;
+     border-radius: 8px;
+     box-shadow:  0px 0px 10px rgba(143, 151, 196, 0.3);
+     padding: 30px 20px 0 20px;
+     background-color: var(--bgwhite);
+
+}
+.notification-box .header{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.header > h3 > span{
+     padding:0 8px;
+     font-size: 16px;
+     margin: 0 5px;
+     color: #ffffff;
+     border-radius: 4px;
+     background-color: hsl(219, 85%, 26%);
+}
+.notification-box .header p,h3{
+     margin: 0;
+}
+
+.header > p{
+     font-weight: 500;
+     font-size: 16px;
+     color: hsl(219, 12%, 42%);
+     cursor: pointer;
+}
+.header >p:hover{
+     color: hsl(219, 85%, 26%);
+}
+.fw-bold{
+     font-weight: var(--fontbold);
+}
+.notifications{
+     margin-top: 20px;
+}
+
+.notification{
+     margin: 10px 0;
+     padding: 20px;
+     display: flex;
+     align-items: flex-start;
+     gap: 20px;
+}
+.active{
+     border-radius: 4px;
+     background-color:   var(--Verylightgrayishblue);
+}
+.notification > .profile-avatar{
+     height: 40px;
+}
+.time{
+     color: var(--Grayishblue);
+     font-weight: 500;
+     font-size: 16px;
+}
+.user{
+     font-weight: 800;
+     font-size: 16px;
+     cursor: pointer;
+}
+.react-to{
+     color:  var(--Darkgrayishblue);
+     font-weight: 500;
+
+}
+.user:hover{
+     color: hsl(219, 85%, 26%);
+}
+.event{
+     font-weight: 800;
+     cursor: pointer;
+     color: hsl(219, 12%, 42%);
+}
+.event:hover{
+     color: hsl(219, 85%, 26%);
+
+}
+.message-box {
+     padding: 20px;
+     margin: 5px 0;
+     font-weight: 500;
+     font-size: 16px;
+     border-radius: 4px;
+     border: var(--blackborder);
+     cursor: pointer;
+}
+.message-box:hover{
+     background-color: var(--Lightgrayishblue1);
+}
+.message-box > p {
+     color: var(--Darkgrayishblue);
+
+}
+.image-chess{
+     height: 50px;
+}
+.empty{
+     flex: 1;
+}
+
+.red-dot{
+     background-color: var(--bgred);
+     border-radius: 50%;
+     height: 6px;
+     width: 6px;
+     margin: 0;
+     display: inline-block;
+}
+
+@media screen and (max-width:375px){
+     .notification-box{
+          box-shadow: none;
+          padding: 30px 10px 0 10px;
+          
+     }
+
+}
